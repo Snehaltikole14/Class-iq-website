@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --common-padding: 0 8vw;
+  --primary-brand-color: #c2f578;
+  --primary-text-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* primary color #C2F578 */
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  padding: var(--common-padding);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 6vw;
+}
+
+.header-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.header-left a svg {
+  margin-right: 24px;
+}
+.header-left a.courses {
+  color: #3e3e3e;
+}
+.header-left .logo-container {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-right button {
+  border: none;
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.header-right button:hover {
+  background-color: #191919;
+}
+.signup-btn {
+  margin-right: 24px;
+}
+/* header end */
+
+/* main start */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--common-padding);
+  width: 100%;
+  height: 88vh;
+}
+
+.main-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.main-heading {
+  font-size: 68px;
+}
+.main-highlight {
+  font-weight: bold;
+  position: relative;
+}
+.border-b {
+  position: absolute;
+  bottom: -16px;
+}
+.main-desc {
+  color: #96989a;
+}
+
+.main-left button {
+  border: none;
+  color: var(--primary-text-color);
+  background-color: var(--primary-brand-color);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.main-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  background: radial-gradient(
+    circle,
+    var(--primary-brand-color) 0%,
+    rgba(148, 187, 233, 0) 75%
+  );
+  position: relative;
+}
+.left-icon {
+  position: absolute;
+  left: 36px;
+  top: 90px;
+}
+.main-right img {
+  width: 90%;
+  display: inline-block;
+  margin-right: 1px;
+}
+.main-img {
+  position: relative;
+
+  right: 100px;
+  top: 110px;
+}
+
+/* main end */
+
+/* Section Start */
+
+.section {
+  align-items: center;
+  padding: var(--common-padding);
+}
+.section1 {
+  align-items: center;
+}
+.section-desc {
+  text-align: center;
+  margin-top: 50px;
+  color: #2e2d2d;
+}
+.section2 {
+  margin-top: 30px;
+  padding: var(--common-padding);
+}
+.section2 svg {
+  margin-right: 90px;
+  width: 9vw;
+  align-items: center;
+  text-align: center;
+}
+
+/* Middle Start */
+.middle1 {
+  align-items: center;
+  padding: var(--common-padding);
+}
+.middle-heading {
+  text-align: center;
+  color: #2c2a2a;
+  margin-top: 100px;
+}
+.middle-highlight {
+  font-weight: bold;
+  position: relative;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--common-padding);
+}
+
+.box1 p{
+  position: relative;
+  bottom: 40px;
+  
+}
+.box1 img {
+  margin-top: 10px;
+}
+
+.box1 {
+  height: 35vh;
+  width: 20vw;
+  border: 1px solid #eaecee;
+  text-align: center;
+  margin-top: 45px;
+  border-radius: 8%;
+  background-color: #eaecee;
+}
+.box1 button {
+  height: 7vh;
+  width: 7vw;
+  border: 1px solid #c2f578;
+  background: #c2f578;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  bottom: 30px;
+}
+
+.middle2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle2 h1{
+  position: relative;
+  right: 250px;
+}
+.middle2 img{
+  padding: var(--common-padding);
+  height: 65vh;
+  width: 55vw;
+  position: relative;
+  top: 140px;
+
+}
+
+.middle3{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 760px;
+  bottom: 160px;
+}
+/* Section End */
+
+/* SignUp Page CSS Start */
+
+.login-page {
+  padding: 50px;
+  border: 2px solid rgb(237, 241, 247);
+  border-radius: 10px;
+  margin: 41px;
+  color: rgb(55 65 81);
+  text-align: start;
+  position: absolute;
+  right: 30%;
+  background-color: rgb(237, 241, 247);
+  font-size: 14px;
+  height: 80vh;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 25px;
+}
+
+.login-page form {
+  padding: 20px;
+  text-align: start;
+}
+.login-page input {
+  text-align: start;
+  height: 7vh;
+  width: 18vw;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(209, 213, 219);
+}
+.login-page button {
+  height: 6vh;
+  width: 18vw;
+  background-color: #97e128;
+  border: 1px solid #c2f578;
+}
+
+.login-page button:hover {
+  background-color: #487505;
+}
+.login-page a {
+  color: rgb(55 65 81);
+}
+
+/* Login Page CSS Start */
+
+.login-page1 {
+  padding: 50px;
+  border: 2px solid rgb(237, 241, 247);
+  border-radius: 10px;
+  margin: 41px;
+  color: rgb(55 65 81);
+  text-align: start;
+  position: absolute;
+  right: 30%;
+  background-color: rgb(237, 241, 247);
+  font-size: 14px;
+  height: 65vh;
+}
+
+.login-page1 form {
+  padding: 20px;
+  text-align: start;
+}
+.login-page1 input {
+  text-align: start;
+  height: 7vh;
+  width: 18vw;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(209, 213, 219);
+}
+.login-page1 button {
+  height: 6vh;
+  width: 18vw;
+  background-color: #97e128;
+  border: 1px solid #c2f578;
+}
+
+.login-page1 button:hover {
+  background-color: #487505;
+}
+.login-page1 a {
+  color: rgb(55 65 81);
+}
+
+/* Login Page CSS End  */
