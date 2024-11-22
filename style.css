@@ -18,6 +18,8 @@ body {
   overflow-y: auto;
 }
 
+/* Front-Page Start */
+
 /* primary color #C2F578 */
 
 /* header */
@@ -383,6 +385,8 @@ ul {
   padding: 10px;
 }
 
+/* Front-Page CSS End */
+
 /* SignUp Page CSS Start */
 
 .login-page {
@@ -480,8 +484,7 @@ ul {
   transform: translateY(
     -50%
   ); /*Moves the element up by 50% of its own height */
-
-  font-size: 14px;
+ font-size: 14px;
   background-color: rgb(194 245 120);
   color: black;
   border: 1px solid rgb(194 245 120);
@@ -579,6 +582,9 @@ ul {
 }
 
 /* Login Page CSS End  */
+
+
+
 /* Coursses Page Start */
 
 .courses h2 {
@@ -699,4 +705,49 @@ ul {
 .box-2:hover {
   scale: 1.06;
   background-color: #defcb0;
+}
+
+/* Courses Page in CSS End */
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-left, .main-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 40px;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .main-left {
+    width: 100%;
+  }
+
+  .main-heading {
+    font-size: 50px;
+  }
+
+  .course-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
