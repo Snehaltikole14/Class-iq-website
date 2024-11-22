@@ -26,13 +26,24 @@
                 ClassIQ
 
             </a>
-            <a href="/courses" class="courses">courses</a>
+            <a href="courses.html" class="courses">courses</a>
         </div>
         <div class="header-right">
             <button onclick="signup()">Signup</button>
-            <button>Login</button>
+            <script>
+                function signup() {
+                    location.href = "signup.html"
+                }
+            </script>
+            <button onclick="login()">Login</button>
+            <script>
+                function login() {
+                    location.href = "login.html"
+                }
+            </script>
         </div>
     </header>
+
 
     <div class="login-page">
         <p class="paragraph">SignUp

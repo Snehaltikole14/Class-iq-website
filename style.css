@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  overflow-x: hidden; /*Sirf horizontal scroll hide karega */
-  line-height: inherit;
-}
 
 :root {
   --common-padding: 0 8vw;
@@ -14,7 +10,12 @@ body {
   --primary-text-color: #000;
   font-family: sans-serif;
   background-color: #f9f9f9;
-  height: 100%;
+  height: 60vh;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* primary color #C2F578 */
@@ -97,10 +98,6 @@ main {
 }
 .main-desc {
   color: #96989a;
-}
-
-.main-desc::selection {
-  background: rgb(91, 254, 102);
 }
 
 .main-left button {
@@ -186,7 +183,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding: var(--common-padding);
-  transition: all 2s ease-in-out;
 }
 
 .box1 p {
@@ -206,12 +202,6 @@ main {
   border-radius: 8%;
   background-color: #eaecee;
 }
-
-.box1:hover{
-  scale:1.06;
-    background-color: #defcb0;
-}
-
 .box1 button {
   height: 7vh;
   width: 7vw;
@@ -363,20 +353,23 @@ ul {
 .border {
   color: rgb(234 237 235);
   position: relative;
-  bottom: 800px;
+  bottom: 250px;
   width: 100vw;
   padding: var(--common-padding);
 }
-
 .para1 {
   position: relative;
-  bottom: 200px;
+  bottom: 220px;
   padding: var(--common-padding);
-  color: rgb(85, 83, 83);
-  font-size: 16px;
+  color: rgb(55 54 54);
+  font-size: 15px;
 }
 
 .box4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 6vh;
   width: 3vw;
   background-color: rgb(194 245 120);
@@ -384,7 +377,7 @@ ul {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  bottom: 230px;
+  bottom: 247px;
   left: 990px;
   border-radius: 3px;
   padding: 10px;
@@ -586,8 +579,8 @@ ul {
 }
 
 /* Login Page CSS End  */
+/* Coursses Page Start */
 
-/* Courses Page CSS Start */
 .courses h2 {
   position: absolute;
   top: 140px;
@@ -645,10 +638,9 @@ ul {
   left: 110px;
   font-size: 18px;
   transition: all 0.2s ease-in-out;
-  
 }
 
-.box-1:hover{
+.box-1:hover {
   scale: 1.06;
   background-color: #defcb0;
 }
@@ -658,9 +650,8 @@ ul {
   grid-template-rows: 350px;
   grid-auto-rows: 100px;
   padding: var(--common-padding);
-   position: relative;
+  position: relative;
   bottom: 712px;
-  
 }
 
 .box-2 {
@@ -671,7 +662,6 @@ ul {
   margin-top: 45px;
   border-radius: 8%;
   background-color: rgb(236 237 239);
- 
 }
 
 .box-2 h3 {
@@ -706,13 +696,7 @@ ul {
   font-size: 18px;
 }
 
-.box-2:hover{
+.box-2:hover {
   scale: 1.06;
   background-color: #defcb0;
-}
-
-footer{
-  position: relative;
-  top:60px;
-
 }
