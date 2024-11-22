@@ -716,6 +716,7 @@ ul {
     flex-direction: column;
     height: auto;
   }
+  
 
   .main-left, .main-right {
     width: 100%;
@@ -735,6 +736,17 @@ ul {
     width: 80%;
     margin-bottom: 20px;
   }
+
+.login-page{
+  width: 51%;
+}
+   .login-page input{
+    width:120%
+   }
+  .login-page button{
+    width:120%
+   }
+  
 }
 
 /* Tablet View */
