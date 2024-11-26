@@ -13,10 +13,6 @@
   height: 60vh;
 }
 
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
 /* Front-Page Start */
 
@@ -235,9 +231,9 @@ main {
 .middle3 {
   /* display: flex;
   justify-content: space-between; */
-  position: relative;
-  left: 600px;
-  bottom: 350px;
+  /* position: absolute; */
+  margin-left: 600px;
+  margin-top:-350px;
 }
 
 .middle3 h1 {
@@ -257,26 +253,39 @@ main {
   color: rgb(84 84 84);
   border-radius: 6px;
 }
-/* Middle ENd */
+.middle3 img{
+  height: 4vh;
+  margin-top: 2px;
+  margin-left:-98px;
+}
 
-/* Footer Start */
+.middle3 p{
+  margin-top:-30px ;
+  margin-right: -20px;
+}
 
+
+
+.middle-footer{
+padding: var(--common-padding);
+
+}
 .footer-left {
   display: flex;
   align-items: center;
   gap: 1vw;
-  padding: var(--common-padding);
+  
   color: rgb(55 54 54);
   font-size: 22px;
-  margin-top: -220px;
+  margin-top: 100px;
 }
 
-.footer1 {
+/* .footer1 {
   padding: var(--common-padding);
-}
+} */
 
 .footer1 h2 {
-  margin-top: 30px;
+  margin-top:30px ;
 }
 
 .footer1 P {
@@ -286,11 +295,8 @@ main {
 }
 
 .input-container {
-  /* display: flex;
-  align-items: center; */
   position: relative;
   width: 300px;
-  padding: var(--common-padding);
   margin-top: 30px;
 }
 .input-container input {
@@ -303,15 +309,14 @@ main {
 
 .input-container button {
   position: absolute;
-  right: -230px; /* Button's position inside input field */
+  right: -130px; /* Button's position inside input field */
   top: 50%;
   width: 15vh;
   height: 6vh;
   transform: translateY(
     -50%
   ); /*Moves the element up by 50% of its own height */
-
-  font-size: 14px;
+ font-size: 14px;
   background-color: rgb(194 245 120);
   color: black;
   border: 1px solid rgb(194 245 120);
@@ -324,22 +329,21 @@ main {
 }
 
 .footer-right1 {
-  padding: var(--common-padding);
-  position: relative;
-  bottom: 200px;
-  left: 650px;
-  margin-bottom: 10px;
+ 
+margin-top:-210px;
+  margin-left: 650px;
+ 
 }
 .footer-right1 h3 {
   margin-bottom: 10px;
   color: rgb(55 54 54);
 }
 .footer-right2 {
-  padding: var(--common-padding);
-  position: relative;
-  bottom: 370px;
-  left: 980px;
-  margin-bottom: 15px;
+ 
+ 
+  margin-top: -180px;
+  margin-left: 980px;
+ 
 }
 
 .footer-right2 h3 {
@@ -352,17 +356,24 @@ ul {
   color: rgb(55 54 54);
 }
 
-.border {
-  color: rgb(234 237 235);
-  position: relative;
-  bottom: 250px;
-  width: 100vw;
+footer{
+  margin-top: 380px;
   padding: var(--common-padding);
 }
-.para1 {
-  position: relative;
-  bottom: 220px;
-  padding: var(--common-padding);
+
+.custom-hr {
+    border: 0; /* Remove default styling */
+    border-top: 1px solid #333; /* Add a solid top border */
+    /* Add sp margin: 20px 0;ace around the rule */
+    width: 80%; /* Adjust the width as needed */
+    opacity: 0.8;
+    margin-top: 130px;
+    padding: var(--common-padding);
+    margin-left: 100px; /* Optional: Add transparency */
+}
+.footer-end {
+ 
+  margin-top: -350px;
   color: rgb(55 54 54);
   font-size: 15px;
 }
@@ -371,7 +382,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 6vh;
   width: 3vw;
   background-color: rgb(194 245 120);
@@ -379,8 +389,8 @@ ul {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  bottom: 247px;
-  left: 990px;
+  bottom: 30px;
+  left: 890px;
   border-radius: 3px;
   padding: 10px;
 }
@@ -437,10 +447,9 @@ ul {
 .footer-left1 {
   display: flex;
   align-items: center;
-  padding: var(--common-padding);
-  position: relative;
-  top: 650px;
-  margin-bottom: 10px;
+  
+  margin-top: 650px;
+  /* margin-bottom: 1000px; */
 }
 
 .footer2 h2 {
@@ -643,7 +652,7 @@ ul {
   position: relative;
   left: 110px;
   font-size: 18px;
-  transition: all 0.2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .box-1:hover {
@@ -707,6 +716,17 @@ ul {
   background-color: #defcb0;
 }
 
+.footer-left4 {
+  display: flex;
+  align-items: center;
+  
+  margin-top: -550px;
+  /* margin-bottom: 1000px; */
+}
+
+
+
+
 /* Courses Page in CSS End */
 
 
@@ -746,6 +766,12 @@ ul {
   .login-page button{
     width:120%
    }
+  .middle3{
+    width: 80%;
+        margin-bottom: 20px;
+        flex-direction: column;
+  }
+
   
 }
 
@@ -760,6 +786,10 @@ ul {
   }
 
   .course-box {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .course-box2{
+    flex-direction: column;
   }
 }
